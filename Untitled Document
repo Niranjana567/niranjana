@@ -1,0 +1,33 @@
+# a={"diya":"diya123","ashika":"ashika123"}
+# username=input("enter username; ")
+# if username  in a:
+#     password=input("enter password; ")
+#     if password == a[username]:
+#         print("login sucess")
+#     else:
+#         print("incorrect password")
+# else:
+#     print("user invalid")
+
+
+
+
+
+dic = {}
+name=input("enter name :")
+for i in name:
+    if i in dic:
+        dic[i] = dic[i]+1
+    else:
+        dic[i] = 1
+print(dic)
+max_count=0
+most_occuring=""
+for x in dic:
+    if dic[x]>max_count:
+         max_count=dic[x]
+         most_occuring=x
+   
+print( most_occuring ,"\n",max_count)
+   
+
